@@ -1,0 +1,90 @@
+.order_list {
+  background-color: wheat;
+  margin: 20px 40px 30px 20px;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.order_item {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.order_item:last-child {
+  margin-bottom: 0;
+}
+
+.order_header {
+  height: 30px;
+  padding: 0 20px;
+}
+
+.order_header p {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.order_body {
+  padding: 0 10px;
+}
+.order_body h4 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.item_in_order {
+  width: 70%;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-bottom: 1px dashed black;
+}
+
+.to_right {
+  text-align: right;
+}
+.to_right.fix_qty {
+  width: 250px;
+}
+
+.email_btn_wrapper {
+  height: 60px;
+  padding: 10px 30px; 
+}
+
+.email_btn_wrapper div {
+  width: 50%;
+  float: left;
+}
+
+.email_btn_wrapper div h2 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.email_btn_wrapper button {
+  width: 200px;
+  height: 60px;
+  background-color: whitesmoke;
+  color: #4CAF50;
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 3px solid #4CAF50;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  float: right;
+  outline: none;
+}
+
+.email_btn_wrapper button:hover {
+  background-color: #4CAF50;
+  color: whitesmoke;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pizza Cabin - Login</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="static/css/basic_layout.css">
+  <link rel="stylesheet" href="static/css/login_form.css">
+  <script src="static/js/form_validation.js"></script>
+  <style>
+    .form_table {
+      width: 30em;
+    }
+    td:nth-child(1) {
+      width: 11em;
+    }
+    td:nth-child(2) {
+      width: 11em;
+    }
+    td:nth-child(3) {
+      width: 8em;
+    }
+    .error_message {
+      color: red;
+      font-size: 12px;
+      padding: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="global-header">
+      <div class="global-nav">
+        <a href="index.php" style="padding: 0;height: 100px;"><img id="logo" src="static/img/logo.png" alt="Home"></a>
+        <a href="menu/pizza.php" style="margin-left: 25px;">Menu</a>
+        <a href="shoppingcart/cart.php">MyCart</a>
+        <a href="about.php">About us</a>
+        <div class="login-btn">
+          <a href="login.php">Login</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="formwrapper">
+        <h1>Member Registration</h1>
+        <form action="register.php" method="POST">
+          <table class="form_table">
+            <tr>
+              <td><label for="username">*Username: </label></td>
+              <td><input type="text" name="username" id="username" onchange="return username_validate()" required></td><td>
+                <span id="username_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td><label for="password">*Password: </label></td>
+              <td><input type="password" name="password" id="password" onchange="return password_validate()" required></td><td>
+                <span id="password_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td><label for="password2">*Confirm Password: </label></td>
+              <td><input type="password" name="password2" id="password2" onchange="return password2_validate()" required></td><td>
+                <span id="password2_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td><label for="email">*E-mail: </label></td>
+              <td><input type="email" name="email" id="email" onchange="return email_validate()" required></td><td>
+                <span id="email_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td><label for="phone">*Phone number: </label></td>
+              <td><input type="number" name="phone" id="phone" onchange="return phone_validate()" required></td><td>
+                <span id="phone_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td><label for="addr">*Address: </label></td>
+              <td><textarea name="addr" id="addr" cols="30" rows="3" required></textarea></td><td></td>
+            </tr>
+            <tr>
+              <td><label for="postal">*Postal code: </label></td>
+              <td><input type="number" name="postal" id="postal" onchange="return postal_validate()" required></td><td>
+                <span id="postal_message" class="error_message"></span></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="submit" value="Register"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="global-footer">
+    <i>Copyright &copy; 2019 Pizza Cabin</i><br />
+  </div>
+</body>
+</html>
