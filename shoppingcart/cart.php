@@ -116,7 +116,7 @@ if (!isset($_SESSION['cart'])){
           </div>
 
           <?php if($total_price == 0) { ?>
-          <div class="cart_footer">
+          <div class="cart_footer" style="border: 0;">
             <h1 class="empty_msg">Your cart is empty</h1>
           </div>
           <?php } else { ?>

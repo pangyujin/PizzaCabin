@@ -22,6 +22,14 @@ $row = $item_result->fetch_assoc();
 $item = new FoodDAO($row['category'], $row['name'], $row['photo'], $row['price'], $row['description']);
 
 $date_string = date("Y-m-d H:i:s");
+
+if ($item->get_type() == 'sides') {
+  $menu_back = 'sides.php';
+} elseif ($item->get_type() == 'beverage') {
+  $menu_back = 'beverage.php';
+} else {
+  $menu_back = 'pizza.php';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -104,7 +112,7 @@ $date_string = date("Y-m-d H:i:s");
         <?php } ?>
 
           <div class="submit_btn">
-            <button type="button" class="backtomenu" onclick="location.href='pizza.php'">Back to Menu</button>
+            <button type="button" class="backtomenu" onclick="location.href=<?php echo '\''.$menu_back.'\''; ?>">Back to Menu</button>
             <button type="submit" class="addtocart">Add to Cart</button>
           </div>
         </form>

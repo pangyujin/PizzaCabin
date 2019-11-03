@@ -141,15 +141,15 @@ if(isset($_SESSION['valid_user'])) {
 
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="static/img/slideshow/pizza.jpg" width="1000px" height="650px">
+          <a href="menu/pizza.php"><img src="static/img/slideshow/pizza.jpg" width="1000px" height="650px"></a>
           <div class="slides_text">Pizza</div>
         </div>
         <div class="mySlides fade">
-          <img src="static/img/slideshow/sides.jpg" width="1000px" height="650px">
+          <a href="menu/sides.php"><img src="static/img/slideshow/sides.jpg" width="1000px" height="650px"></a>
           <div class="slides_text">Sides</div>
         </div>
         <div class="mySlides fade">
-          <img src="static/img/slideshow/drink.jpg" width="1000px" height="650px">
+          <a href="menu/beverage.php"><img src="static/img/slideshow/drink.jpg" width="1000px" height="650px"></a>
           <div class="slides_text">Drink</div>
         </div>
 

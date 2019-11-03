@@ -148,8 +148,16 @@ if(isset($_SESSION['valid_user'])) {
         </div>
         <?php endforeach; ?>
 
+
+        <?php if(count($order_list) == 0) { ?>
+
+          <div class="order_list"><h1 style="text-align: center;">No previous order</h1></div>
+
         <?php } ?>
 
+        <?php } ?>
+
+        
       </div>
     </div>
   </div>

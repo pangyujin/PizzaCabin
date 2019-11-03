@@ -130,7 +130,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
       <?php } else { ?>
         <?php if (isset($email)) { ?>
-          <h3 class="error">Invalid email or password. Try again<h3>
+          <h3 class="error">Invalid email or password. Try again</h3>
         <?php } ?>
         <div class="formwrapper">
           <h1>Welcome to Pizza Cabin</h1>
@@ -150,7 +150,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
               </tr>
             </table>
           </form>
-          <p>Don\'t have an account? <a href="signup.html">Sign up</a></p>
+          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
         </div>
       <?php } ?>
       </div>
